@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ugglympics.CSharp.Plugins", "Ugglympics.CSharp.Plugins.csproj", "{E41445B8-EDBE-D38F-F512-1E51D0DE35D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ugglympics.CSharp", "Ugglympics.CSharp.csproj", "{DC634A5C-7EC5-DE02-EF89-B1C29BDD1431}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ugglympics.CSharp.Editor", "Ugglympics.CSharp.Editor.csproj", "{EC194801-C0B4-DA08-3B8D-7FD045604512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E41445B8-EDBE-D38F-F512-1E51D0DE35D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41445B8-EDBE-D38F-F512-1E51D0DE35D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41445B8-EDBE-D38F-F512-1E51D0DE35D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41445B8-EDBE-D38F-F512-1E51D0DE35D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC634A5C-7EC5-DE02-EF89-B1C29BDD1431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC634A5C-7EC5-DE02-EF89-B1C29BDD1431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC634A5C-7EC5-DE02-EF89-B1C29BDD1431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC634A5C-7EC5-DE02-EF89-B1C29BDD1431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC194801-C0B4-DA08-3B8D-7FD045604512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC194801-C0B4-DA08-3B8D-7FD045604512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC194801-C0B4-DA08-3B8D-7FD045604512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC194801-C0B4-DA08-3B8D-7FD045604512}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
