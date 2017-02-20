@@ -39,3 +39,7 @@ Thumbs.db
 # Unity generated files #
 ######################
 Temp
+Library
+obj
+*.csproj
+*.sln
