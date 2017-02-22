@@ -1,14 +1,16 @@
-﻿using UnityEngine;
+﻿using UnityEngine.Networking;
 
-public class PlayerData : MonoBehaviour {
-
+public class PlayerData : NetworkBehaviour
+{
     public int swipes;
     public float swipeMeter;
     public float hitMeter;
-    public bool isStunned;
     public float startTime;
     public float gameTime;
     public int stunCount;
+
+    [SyncVar]
+    public bool isStunned;
 
     public int Swipes
     {
@@ -85,6 +87,12 @@ public class PlayerData : MonoBehaviour {
     {
         get { return stunCount; }
         set { stunCount = value; }
+    }
+
+    public override void OnStartLocalPlayer()
+    {
+        base.OnStartLocalPlayer();
+        EventManager.SendMessage(Events.GameEvents.playerConnected, new object[1] { this});
     }
 
     public void  Reset()

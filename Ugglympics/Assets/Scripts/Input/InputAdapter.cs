@@ -10,6 +10,8 @@ public abstract class InputAdapter
         {
             switch(Application.platform)
             {
+                case RuntimePlatform.OSXPlayer:
+                case RuntimePlatform.WindowsPlayer:
                 case RuntimePlatform.OSXEditor:
                 case RuntimePlatform.WindowsEditor:
                     {

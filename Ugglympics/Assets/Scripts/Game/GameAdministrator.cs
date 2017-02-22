@@ -1,26 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.EventSystems;
+using UnityEngine.Networking;
+using System.Collections.Generic;
 
-public class GameAdministrator : MonoBehaviour {
+public class GameAdministrator : NetworkBehaviour {
 
-    private PlayerData playerData;
+    private PlayerData playerData = null;
+    private List<PlayerData> opponents = null;
     private int gameSessions;
 
-    void Awake()
+    void Start()
     {
-        playerData = FindObjectOfType<PlayerData>();
+        EventManager.Subscribe(Events.GameEvents.playerConnected, OnLocalPlayerConnected);
+    }
+
+    void OnLocalPlayerConnected(object[] args)
+    {
+        if (args.Length == 0 || playerData != null)
+            return;
+
+        playerData = args[0] as PlayerData;
+
+        if (playerData != null)
+        {
+            EventManager.Unsubscribe(Events.GameEvents.playerConnected, OnLocalPlayerConnected);
+            AddGameEventListeners();
+            OnSessionReset(null);
+        }
+    }
+
+    void AddGameEventListeners()
+    {
         EventManager.Subscribe(Events.InputEvents.validSwipeCaptured, OnValidSwipe);
         EventManager.Subscribe(Events.InputEvents.validSwipeSetCaptured, OnValidSwipeSetCaptured);
         EventManager.Subscribe(Events.UIEvents.hitButtonClick, OnHitButtonClick);
         EventManager.Subscribe(Events.PlayerDataEvents.swipeMeterValueChanged, OnSwipeMeterValueChanged);
         EventManager.Subscribe(Events.UIEvents.resetButtonClick, OnSessionReset);
         EventManager.Subscribe(Events.UIEvents.cheatButtonClick, OnSessionReset);
-    }
-
-    void Start()
-    {
-        OnSessionReset(null);
     }
 
     void Destroy()

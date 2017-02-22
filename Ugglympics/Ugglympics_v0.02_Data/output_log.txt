@@ -1,0 +1,186 @@
+Mono path[0] = 'C:/Users/akabasu/Documents/Ugglympics/Ugglympics/Ugglympics_v0.02_Data/Managed'
+Mono path[1] = 'C:/Users/akabasu/Documents/Ugglympics/Ugglympics/Ugglympics_v0.02_Data/Mono'
+Mono config path = 'C:/Users/akabasu/Documents/Ugglympics/Ugglympics/Ugglympics_v0.02_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/akabasu/Documents/Ugglympics/Ugglympics/Ugglympics_v0.02_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55310
+Multi-casting "[IP] 10.107.84.180 [Port] 55310 [Flags] 2 [Guid] 2204522333 [EditorId] 1109497578 [Version] 1048832 [Id] WindowsPlayer(eahy-d-5154888) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55310]
+PlayerConnection already initialized - listening to [0.0.0.0:55310]
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: NVIDIA Quadro NVS 295 (ID=0x6fd)
+    Vendor:   NVIDIA
+    VRAM:     2022 MB
+    Driver:   8.17.12.7619
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Ugglympics_v0.02_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3840x1164 at 0,-84
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.187772 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object, Object)
+UnityEngine.Debug:LogWarning(Object, Object)
+UnityEngine.Transform:set_parent(Transform) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\TransformBindings.gen.cs:135)
+CheatUI:CreateCheatMenu() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:40)
+CheatUI:Awake() (at C:\Users\akabasu\Documents\Ugglympics\Ugglympics\Assets\Scripts\UI\CheatUI.cs:18)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/TransformBindings.gen.cs Line: 135)
+
+DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
+UnityEngine.Object:DontDestroyOnLoad(Object)
+UnityEngine.Networking.NetworkManager:InitializeSingleton() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:196)
+UnityEngine.Networking.NetworkManager:Awake() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:173)
+
+[C:/buildslave/unity/build/Runtime/SceneManager/SceneManager.cpp line 447] 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 196)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 2390 -> priority: 1 
+Network configuration mismatch detected. The number of networked scripts on the client does not match the number of networked scripts on the server. This could be caused by lazy loading of scripts on the client. This warning can be disabled by the checkbox in NetworkManager Script CRC Check.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogWarning(Object)
+UnityEngine.Networking.NetworkCRC:ValidateInternal(CRCMessageEntry[], Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkCRC.cs:77)
+UnityEngine.Networking.NetworkCRC:Validate(CRCMessageEntry[], Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkCRC.cs:69)
+UnityEngine.Networking.NetworkClient:OnCRC(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:889)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkCRC.cs Line: 77)
+
+CRC Remote Dump GameAdministrator : 0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Networking.NetworkCRC:Dump(CRCMessageEntry[]) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkCRC.cs:117)
+UnityEngine.Networking.NetworkCRC:ValidateInternal(CRCMessageEntry[], Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkCRC.cs:78)
+UnityEngine.Networking.NetworkCRC:Validate(CRCMessageEntry[], Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkCRC.cs:69)
+UnityEngine.Networking.NetworkClient:OnCRC(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:889)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:468)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:424)
+UnityEngine.Networking.NetworkConnection:TransportRecieve(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:735)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkCRC.cs Line: 117)
+
+Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777}
+ClientDisconnected due to error: Timeout
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:LogError(Object)
+UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1125)
+UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:954)
+UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:217)
+UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:199)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:950)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1089)
+ 
+(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1125)
+

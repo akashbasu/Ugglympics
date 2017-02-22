@@ -23,6 +23,7 @@
     public class GameEvents
     {
         public const string swipePhaseComplete = "swipePhaseComplete";
+        public const string playerConnected = "playerConnected";
     }
 
     public class CheatEvents
