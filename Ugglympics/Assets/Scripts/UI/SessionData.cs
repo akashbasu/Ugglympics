@@ -29,7 +29,7 @@ public class SessionData : MonoBehaviour {
         if (args.Length == 0)
             return;
 
-        PlayerData data = args[0] as PlayerData;
+        PlayerModel data = args[0] as PlayerModel;
         string output = String.Format("Player: {0}\nValid Swipes: {1}\nGame Time: {2} seconds\nStun Count: {3}\n", (i + 1), data.Swipes, data.GameTime, data.StunCount);
 
         if(rows.Count >= (i + 1))

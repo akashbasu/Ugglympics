@@ -3,27 +3,17 @@ using System.Collections;
 using UnityEngine.Networking;
 using System.Collections.Generic;
 
-public class GameAdministrator : NetworkBehaviour {
+public class PlayerControler : NetworkBehaviour {
 
-    private PlayerData playerData = null;
-    private List<PlayerData> opponents = null;
-    private int gameSessions;
+    private PlayerModel playerModel = null;
 
-    void Start()
+	public override void OnStartLocalPlayer()
     {
-        EventManager.Subscribe(Events.GameEvents.playerConnected, OnLocalPlayerConnected);
-    }
+    	base.OnStartLocalPlayer ();
 
-    void OnLocalPlayerConnected(object[] args)
-    {
-        if (args.Length == 0 || playerData != null)
-            return;
-
-        playerData = args[0] as PlayerData;
-
-        if (playerData != null)
+    	playerModel = gameObject.GetComponent <PlayerModel> ();
+        if (playerModel != null)
         {
-            EventManager.Unsubscribe(Events.GameEvents.playerConnected, OnLocalPlayerConnected);
             AddGameEventListeners();
             OnSessionReset(null);
         }
@@ -33,7 +23,6 @@ public class GameAdministrator : NetworkBehaviour {
     {
         EventManager.Subscribe(Events.InputEvents.validSwipeCaptured, OnValidSwipe);
         EventManager.Subscribe(Events.InputEvents.validSwipeSetCaptured, OnValidSwipeSetCaptured);
-        EventManager.Subscribe(Events.UIEvents.hitButtonClick, OnHitButtonClick);
         EventManager.Subscribe(Events.PlayerDataEvents.swipeMeterValueChanged, OnSwipeMeterValueChanged);
         EventManager.Subscribe(Events.UIEvents.resetButtonClick, OnSessionReset);
         EventManager.Subscribe(Events.UIEvents.cheatButtonClick, OnSessionReset);
@@ -41,10 +30,9 @@ public class GameAdministrator : NetworkBehaviour {
 
     void Destroy()
     {
-        playerData = null;
+        playerModel = null;
         EventManager.Unsubscribe(Events.InputEvents.validSwipeCaptured, OnValidSwipe);
         EventManager.Unsubscribe(Events.InputEvents.validSwipeSetCaptured, OnValidSwipeSetCaptured);
-        EventManager.Unsubscribe(Events.UIEvents.hitButtonClick, OnHitButtonClick);
         EventManager.Unsubscribe(Events.PlayerDataEvents.swipeMeterValueChanged, OnSwipeMeterValueChanged);
         EventManager.Unsubscribe(Events.UIEvents.resetButtonClick, OnSessionReset);
         EventManager.Unsubscribe(Events.UIEvents.cheatButtonClick, OnSessionReset);
@@ -53,42 +41,36 @@ public class GameAdministrator : NetworkBehaviour {
     IEnumerator SwipeMeterDecay()
     {
         yield return new WaitForSeconds(1f);
-        playerData.SwipeMeter -= GameConstants.instance.decayPerSecond;
+        playerModel.SwipeMeter -= GameConstants.instance.decayPerSecond;
         StartCoroutine(SwipeMeterDecay());
     }
 
     IEnumerator HitMeterGrowth()
     {
         yield return new WaitForSeconds(1f);
-        playerData.HitMeter += GameConstants.instance.growthPerSecond;
+        playerModel.HitMeter += GameConstants.instance.growthPerSecond;
         StartCoroutine(HitMeterGrowth());
     }
 
     void OnValidSwipe(object[] args)
     {
-        if (playerData.Swipes == 0)
+        if (playerModel.Swipes == 0)
             OnSessionStart();
 
-        if (!playerData.IsStunned)
-            playerData.Swipes++;
+        if (!playerModel.IsStunned)
+            playerModel.Swipes++;
     }
 
     void OnValidSwipeSetCaptured(object[] args)
     {
-        playerData.SwipeMeter += GameConstants.instance.swipeSetMultiplier;
-    }
-
-    void OnHitButtonClick(object[] args)
-    {
-        playerData.IsStunned = true;
-        playerData.HitMeter = 0;
-        StartCoroutine(OnStun());
+        playerModel.SwipeMeter += GameConstants.instance.swipeSetMultiplier;
     }
 
     IEnumerator OnStun()
     {
+		playerModel.IsStunned = true;
         yield return new WaitForSeconds(GameConstants.instance.stunTime);
-        playerData.IsStunned = false;
+        playerModel.IsStunned = false;
     }
     
     void OnSwipeMeterValueChanged(object[] args)
@@ -96,11 +78,11 @@ public class GameAdministrator : NetworkBehaviour {
         if (args.Length == 0)
             return;
 
-        if (playerData.SwipeMeter >= GameConstants.instance.swipeMeterMax)
+        if (playerModel.SwipeMeter >= GameConstants.instance.swipeMeterMax)
         {
-            playerData.GameTime = Time.time - playerData.StartTime;
+            playerModel.GameTime = Time.time - playerModel.StartTime;
 
-            EventManager.SendMessage(Events.GameEvents.swipePhaseComplete, new object[1] { playerData });
+            EventManager.SendMessage(Events.GameEvents.swipePhaseComplete, new object[1] { playerModel });
 
             OnSessionReset(null);
         }
@@ -108,7 +90,7 @@ public class GameAdministrator : NetworkBehaviour {
 
     void OnSessionStart()
     {
-        playerData.StartTime = Time.time;
+        playerModel.StartTime = Time.time;
         StartCoroutine(SwipeMeterDecay());
         StartCoroutine(HitMeterGrowth());
     }
@@ -116,7 +98,7 @@ public class GameAdministrator : NetworkBehaviour {
     void OnSessionReset(object[] args)
     {
         StopAllCoroutines();
-        playerData.Reset();
+        playerModel.Reset();
     }
 
 }

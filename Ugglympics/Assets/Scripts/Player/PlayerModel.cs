@@ -1,6 +1,6 @@
 ﻿using UnityEngine.Networking;
 
-public class PlayerData : NetworkBehaviour
+public class PlayerModel : NetworkBehaviour
 {
     public int swipes;
     public float swipeMeter;
@@ -87,12 +87,6 @@ public class PlayerData : NetworkBehaviour
     {
         get { return stunCount; }
         set { stunCount = value; }
-    }
-
-    public override void OnStartLocalPlayer()
-    {
-        base.OnStartLocalPlayer();
-        EventManager.SendMessage(Events.GameEvents.playerConnected, new object[1] { this});
     }
 
     public void  Reset()

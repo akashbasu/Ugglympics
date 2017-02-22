@@ -19,10 +19,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4792939068740410}
-  - component: {fileID: 114829132539271794}
-  - component: {fileID: 114934125787754004}
+  - component: {fileID: 114128757934452732}
+  - component: {fileID: 114307936612173390}
+  - component: {fileID: 114087880204857286}
   m_Layer: 0
-  m_Name: PlayerData
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +42,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114829132539271794
+--- !u!114 &114087880204857286
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,25 +50,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1804112332870390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39c088254bd95264792f33ae2e6d554b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  swipes: 0
-  swipeMeter: 0
-  hitMeter: 0
-  startTime: 0
-  gameTime: 0
-  stunCount: 0
-  isStunned: 0
---- !u!114 &114934125787754004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1804112332870390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SceneId:
@@ -90,4 +73,33 @@ MonoBehaviour:
     i14: 8
     i15: 254
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 1
+  m_LocalPlayerAuthority: 0
+--- !u!114 &114128757934452732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804112332870390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ea0aa02d8604f668ccd8f8d0062735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114307936612173390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1804112332870390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bc3db24e6b2e499c9c3bb8fdc1d1113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swipes: 0
+  swipeMeter: 0
+  hitMeter: 0
+  startTime: 0
+  gameTime: 0
+  stunCount: 0
+  isStunned: 0
