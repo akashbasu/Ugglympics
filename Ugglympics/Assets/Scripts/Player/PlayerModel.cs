@@ -8,8 +8,6 @@ public class PlayerModel : NetworkBehaviour
     public float startTime;
     public float gameTime;
     public int stunCount;
-
-    [SyncVar]
     public bool isStunned;
 
     public int Swipes
@@ -98,5 +96,10 @@ public class PlayerModel : NetworkBehaviour
         StartTime = 0;
         GameTime = 0;
         StunCount = 0;
+    }
+
+    public override string ToString()
+    {
+        return string.Format("Swipes : {0} || SwipeMeter : {1} || HitMeter : {2} || IsStunned : {3} || StartTime : {4} || GameTime : {5} || StunCount : {6}", Swipes, SwipeMeter, HitMeter, IsStunned, StartTime, GameTime, StunCount); ;
     }
 }
